@@ -11,7 +11,14 @@ phases:
   build:
     commands:
       - mv wp-config-sample.php wp-config.php
-      - sed -i "s|DB_HOST.*|DB_HOST=$host|g" wp-config.php
-      - sed -i "s|DB_USER.*|DB_USER=$username|g" wp-config.php
-      - sed -i "s|DB_PASS.*|DB_PASS=$pass|g" wp-config.php
+      - sed -i "s|database_name_here|$host|g" wp-config.php
+      - sed -i "s|username_here|$username|g" wp-config.php
+      - sed -i "s|password_here|$pass|g" wp-config.php
+      - sed -i "s|localhost|$endpoint|g" wp-config.php
       - sed -i "s|:3306||g" wp-config.php
+      - cat wp-config.php
+      
+artifacts:
+  files:
+    - '**/*'
+    
