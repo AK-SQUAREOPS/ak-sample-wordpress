@@ -82,8 +82,8 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
-define('WP_HOME','https://wordpress-test.squareops.xyz');
-define('WP_SITEURL','https://wordpress-test.squareops.xyz');
+/*define('WP_HOME','https://wordpress-test.squareops.xyz');
+define('WP_SITEURL','https://wordpress-test.squareops.xyz');*/
 
 /* That's all, stop editing! Happy publishing. */
 
@@ -91,6 +91,7 @@ define('WP_SITEURL','https://wordpress-test.squareops.xyz');
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
-
+define('WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST']);
+define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST']);
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
