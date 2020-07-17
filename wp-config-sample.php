@@ -54,9 +54,9 @@ define( 'AUTH_SALT',        'put your unique phrase here' );
 define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
 define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
 define( 'NONCE_SALT',       'put your unique phrase here' );
-define('FORCE_SSL_ADMIN', true);
-if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
-   $_SERVER['HTTPS']='on';
+//define('FORCE_SSL_ADMIN', true);
+//if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
+ //  $_SERVER['HTTPS']='on';
 
 /**#@-*/
 
