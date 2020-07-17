@@ -70,7 +70,7 @@ if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
 $table_prefix = 'wp_';
 
 /**
- * For developers: WordPress debugging mode.
+ * For developers: WordPress debugging mode..
  *
  * Change this to true to enable the display of notices during development.
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
