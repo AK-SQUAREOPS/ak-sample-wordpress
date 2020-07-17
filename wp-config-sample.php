@@ -83,7 +83,7 @@ $table_prefix = 'wp_';
  */
 define( 'WP_DEBUG', false );
 /*define('WP_HOME','yourhomerulhere');*/
-define('WP_SITEURL','yoursiteurlhere');
+/*define('WP_SITEURL','yoursiteurlhere');*/
 
 /* That's all, stop editing! Happy publishing. */
 
