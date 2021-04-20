@@ -1,0 +1,26 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html
+hooks:
+  BeforeInstall:
+    - location: Scripts/install_dependencies.sh
+      timeout:300
+      runas:root
+  AfterInstall:
+    - location: Scripts/change_permissions.sh
+      timeout: 300
+      runas:root
+  ApplicationStart:
+    - location: Scripts/start_server.sh
+      timeout: 300
+      runas:root
+  ApplicationStop:
+    - location: Scripts/stop_server.sh
+      timeout: 300
+      runas:root
+  ValidateService:
+    - location: Scripts/MonitorService.sh
+      timeout: 300
+      runas:codedeployuser
