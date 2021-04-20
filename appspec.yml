@@ -20,7 +20,4 @@ hooks:
     - location: Scripts/stop_server.sh
       timeout: 300
       runas:root
-  ValidateService:
-    - location: Scripts/MonitorService.sh
-      timeout: 300
-      runas:codedeployuser
+  
