@@ -1,2 +1,2 @@
 #!/bin/bash
-systemctl stop apache2
+systemctl stop nginx
