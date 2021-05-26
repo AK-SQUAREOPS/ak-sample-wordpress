@@ -3,5 +3,5 @@ systemctl start nginx
 
 
 
-apt update -y
+sudo apt update -y
 
