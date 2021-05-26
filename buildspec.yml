@@ -4,6 +4,10 @@ phases:
   build:
     commands:
       - mv wp-config-sample.php wp-config.php
+ ak
+
+        
+ master
       
       
 artifacts:
