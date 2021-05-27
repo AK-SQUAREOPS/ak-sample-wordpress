@@ -1,10 +1,18 @@
 version: 0.2
-
+env: 
+  parameter-store: 
+    DNAME: "/CodeBuild/DBNAME"
+    UNAME: "/CodeBuild/DBUSER"
+    DPASS: "/CodeBuild/DBPASSWORD"
+    LHOST: "/CodeBuild/DBLOCALHOST"
 phases:
   build:
     commands:
       - mv wp-config-sample.php wp-config.php
-        
+      - sed -i  's|database_name_here|'$DNAME'|' wp-config.php 
+      - sed -i  's|username_here|'$UNAME'|' wp-config.php
+      - sed -i  's|password_here|'$DPASS'|' wp-config.php
+      - sed -i  's|localhost|'$LHOST'|' wp-config.php  
       
       
 artifacts:
