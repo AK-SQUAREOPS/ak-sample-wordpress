@@ -20,16 +20,16 @@
 //define(‘RELOCATE’,true);
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', '$/CodeBuild/DBNAME' );
+define( 'DB_NAME', ssm.getparameter(Name='/CodeBuild/DBNAME' );
 
 /** MySQL database username */
-define( 'DB_USER', '$/CodeBuild/DBUSER' );
+define( 'DB_USER', ssm.getparameter(Name='/CodeBuild/DBUSER' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '$/CodeBuild/DBPASS' );
+define( 'DB_PASSWORD', ssm.getparameter(Name='/CodeBuild/DBPASS' );
 
 /** MySQL hostname */
-define( 'DB_HOST', '$/CodeBuild/DBLOCALHOST' );
+define( 'DB_HOST', ssm.getparameter(Name='/CodeBuild/DBLOCALHOST' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
