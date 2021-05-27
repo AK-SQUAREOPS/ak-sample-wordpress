@@ -56,7 +56,7 @@ define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
 define( 'NONCE_SALT',       'put your unique phrase here' );
 //define('FORCE_SSL_ADMIN', true);
 
-if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
+/*if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
    $_SERVER['HTTPS']='on';
 
 /**#@-*/
@@ -91,7 +91,7 @@ define( 'WP_DEBUG', false );
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
-define('WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST']);
+/*define('WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST']);
 define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST']);
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
