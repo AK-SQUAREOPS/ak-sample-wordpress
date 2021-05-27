@@ -20,16 +20,16 @@
 //define(‘RELOCATE’,true);
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'database_name_here' );
+define( 'DB_NAME', '$/CodeBuild/DBNAME' );
 
 /** MySQL database username */
-define( 'DB_USER', 'username_here' );
+define( 'DB_USER', '$/CodeBuild/DBUSER' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'password_here' );
+define( 'DB_PASSWORD', '$/CodeBuild/DBPASS' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', '$/CodeBuild/DBLOCALHOST' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define( 'AUTH_KEY',         '4POS+EyV~hYx}9^V+*,mHnBzi3*Qt|lRV_i7t6<(/DvM}v&{_IrH0Uf#{:|EWVx[' );
+define( 'SECURE_AUTH_KEY',  '7WRIve0mOq!e9Ge3F6|e1 etcw27sb:8DpikR&K-T,#n8&mLHZa1$e>*%1rd$A.[' );
+define( 'LOGGED_IN_KEY',    'zm<4a+O~b2@2_ec|A9WrzbACw|s%Tdd2Nv2F4;)jMv+J?nd:^J-|m{BdRe6XD0H@' );
+define( 'NONCE_KEY',        '3Y6_t6&]k,2u&/?d^YG!Z;Mq=F)5j9`K{M}JVFJfHz//xE*4m>?^Z?{ZY#I1xYxw' );
+define( 'AUTH_SALT',        '0W~cc0v?]>Ual4>fh?KMMpj^p8!oG5g5dNG!j.O:Ttt[:z8i=U@)>eloL7M}e+LG' );
+define( 'SECURE_AUTH_SALT', 'Qg{HZ|]V:WG}6PSr3`|xi5i.4AQzaaHac?{NPZ+vS$6l*s651YLfm+hB-p:yQtLZ' );
+define( 'LOGGED_IN_SALT',   '3QFU?EwWk.~cU@=S`f25h!0R/c]GSoEs;&[:E7yC;**; f]s~RE.^bH_f.al8lQS' );
+define( 'NONCE_SALT',       'feR&uMeLO8(+?hw-gZRkQ)<=MD-+sZ8Yd35X>]apojA91xS>6mmR8)_{Gy}VX+zm' );
 //define('FORCE_SSL_ADMIN', true);
 
 /*if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
