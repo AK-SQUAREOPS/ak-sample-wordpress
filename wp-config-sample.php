@@ -56,7 +56,7 @@ define( 'LOGGED_IN_SALT',   '3QFU?EwWk.~cU@=S`f25h!0R/c]GSoEs;&[:E7yC;**; f]s~RE
 define( 'NONCE_SALT',       'feR&uMeLO8(+?hw-gZRkQ)<=MD-+sZ8Yd35X>]apojA91xS>6mmR8)_{Gy}VX+zm' );
 //define('FORCE_SSL_ADMIN', true);
 
-/*if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
    $_SERVER['HTTPS']='on';
 
 /**#@-*/
@@ -82,8 +82,8 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
-//define('WP_HOME','https://wordpress-test.squareops.xyz');
-//define('WP_SITEURL','https://wordpress-test.squareops.xyz');
+define('WP_HOME','https://ak-demo-wordpress.squareops.xyz');
+define('WP_SITEURL','https://ak-demo-wordpress.squareops.xyz');
 
 /* That's all, stop editing! Happy publishing. */
 
